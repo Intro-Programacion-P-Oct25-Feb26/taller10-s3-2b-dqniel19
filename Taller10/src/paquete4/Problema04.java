@@ -4,12 +4,15 @@
  * and open the template in the editor.
  */
 package paquete4;
+
 import java.util.Scanner;
+
 /**
  *
  * @author reroes
  */
 public class Problema04 {
+
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
 
@@ -23,7 +26,7 @@ public class Problema04 {
                 A[i][j] = entrada.nextInt();
             }
         }
-        
+
         System.out.println("\nIngrese los valores de la matriz B:"); // Leer matriz B
         for (int i = 0; i < B.length; i++) { // Filas
             for (int j = 0; j < B[i].length; j++) { // Columnas
@@ -38,9 +41,9 @@ public class Problema04 {
             for (int j = 0; j < A[i].length; j++) { // Columnas
                 System.out.print(A[i][j] + "\t");
             }
-            System.out.println(""); // Se usa else println para que las matrices se acoplen de manera correcta 
-                                    // 0    0
-                                    // 0    1...
+            System.out.println(""); // Se usa println para que las matrices se acoplen de manera correcta 
+            // 0    0
+            // 0    1...
         }
 
         // Mostrar matriz B
@@ -76,6 +79,3 @@ public class Problema04 {
         }
     }
 }
-
-    
-
