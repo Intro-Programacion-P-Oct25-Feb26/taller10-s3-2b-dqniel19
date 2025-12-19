@@ -23,13 +23,14 @@ public class Problema08 {
          */
         double[][] menor = new double[2][3];
 
+        // Comparación de valores
         for (int i = 0; i < dato1.length; i++) {
             for (int j = 0; j < dato1[i].length; j++) {
 
-                if (dato1[i][j] < dato2[i][j]) {
-                    menor[i][j] = dato1[i][j];
-                } else {
-                    menor[i][j] = dato2[i][j];
+                if (dato1[i][j] < dato2[i][j]) { // Si el valor de la matriz 1 es menor al de la matriz 2
+                    menor[i][j] = dato1[i][j];   // la matriz menor adquirirá dicho valor
+                } else {                         // Si no lo es, automaticamente tomará el valor de 
+                    menor[i][j] = dato2[i][j];   // la matriz 2
                 }
             }
         }
